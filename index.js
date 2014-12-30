@@ -1,7 +1,7 @@
 var redis = require("redis");
 var config = require("soa-example-service-config").config();
 
-var redisClient = redis.createClient(config.redisHost, config.redisPort);
+var redisClient = redis.createClient();
 
 redisClient.on("error", function (err) {
 	console.log("Redis Error: " + err);
