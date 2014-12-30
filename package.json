@@ -1,0 +1,15 @@
+{
+  "name": "soa-example-redis-util",
+  "version": "0.0.0",
+  "description": "utility to load redis into other projects without those projects need to be away of how it's configured",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Bucholtz",
+  "dependencies" :{
+    "redis" : "*",
+    "hiredis" : "*",
+  	"soa-example-service-config": "git://github.com/danbucholtz/soa-example-service-config"
+  }
+}
